@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="username" placeholder="Username">
+	<input type="password" class="password" placeholder="Password">
+	<button class="button">Login</button>
+	<div class="error" style="text-align: center; background-color: red; color: white;"></div>
+
+<script>
+	const user='nuno';
+	const pass='bagas';
+	let button=document.querySelector('.button');
+      button.addEventListener('click' , function(){
+          let input_username=document.querySelector('.username');
+          let username=input_username.value;
+          let input_password=document.querySelector('.password');
+          let password=input_password.value;
+		  
+		  let error=document.querySelector('.error');
+		  if(username!==user){
+		  error.innerHTML='Username not found!. <a href="" class="close">X</a>';
+		  return false;
+		  }
+		  if(password!==pass){
+		  error.innerHTML='Password is wrong!. <a href=""    ass="close">X</a>';
+		  return false;
+		  }
+		  window.location.href='login.html';		 
+	  });
+	  let close=document.querySelector('.close');
+	  close.addEventListener('click',function(){
+		let error=document.querySelector('.error');
+		error.innerHTML='';
+	  } )
+</script>	
+</body>
+</html>

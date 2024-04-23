@@ -1,0 +1,171 @@
+(Kamis-2-2-2023)                                                                                    TAG 
+
+   Tag adalah sebuah penanda awalan dan akhiran dari sebuah elemen HTML
+
+   Tag dibuat dengan siku (<..>) lalu di dalam nya berisi nama tag 
+
+   Setiap tag memiliki fungsi masing masing ada yang di gunakan untuk membuat judul,membuat link,membuatm paragraf,heading dan lain lain 
+
+   Kebanyakkan tag di tulis secara berpasangan dengan penutup nya yaitu (/...>) tetapi ada juga yg tidak berpasangan 
+
+   Pada awalnya tag hanya berjumlah 18 tetapi sekarang seudah berjumlah ratusan.
+
+
+                                                                                 	  CONTOH TAG
+
+    <html> untuk menulis dokumen html
+    <head> untuk membuat bagian head
+    <body> untuk membuat bagian body
+    <p>    untuk membuat paragraf
+                                                                                           TAG WAJIB
+    <DOCTYPE.HTML> untuk deklarasi type document 
+    <html> tag utama dalam HTML
+    <head> untuk bagian kepala dari dokumen
+    <tittle> untuk judul web
+    <body> untu bagian body dari dokumen 
+                                                                                      CARA MENULIS TAG
+    ditulis dengan menggunakan huruf kecil
+    tag yang berpasangan terdiri dari tag pembuka <hl> dan tag penutup </hl>
+    isi/cnotent sebuah tag tertulis di antara tag pembuka dan tag penutup
+    tag yang tidak berpasagan di tlis tanpa tanda tag penutup
+    
+                                                                                         ATTRIBUTE/attr
+    attribute adalah kata khusus/kata kunci yang bearada dalam tag pembuka
+    attribute juga disebut dengan modifier tang akan menentukan perilaku elemen
+    attribute juga bisa di tambahkan pada tag manapun ada juga tag yg di wajibkan menggunakan attribute seperti tag <a> <img> <video> .dll
+    atrribute menurut penempatan/pasangan dibagi menjadi 3 global, event special/khusus
+
+                                                                                          ATTRIBUTE GLOBAL
+    *accesskey* menentukan tombol shortcut untuk mengakktifkan atau fokus pada elemen 
+    *class* menentukan class css yg akan di gunakan
+    *contentditable* menentukan isi elemen bisa di edit atau tidak
+    *data-* di gunakan untuk menyimpan data
+    *dir* menentukan arah teks  dari elemen (dari kiri ke kanan atau sebaliknya)
+    *draggable* menentukan  apakah elemen visa di drag atau tidak
+    *hidden* untuk menyembunyikan elemen
+    *id* menentukan id untuk elemen
+    *spellcheck* menentukan apakah elemen harus dilakaukan dengan ejaan grammer atau tidak
+    *lang* untuk menentukan bahasa untuk elemen
+                                                                  
+                                            ol reversed="reversed" type="...."                   
+			
+                                                                             EXTENSION
+Ekstensi adalah format/type sebuah file 
+Ekstensi di tulis setelah nama file dan di awali titik (.)
+Ekstensi file html adalah .html
+                
+
+										FORM
+
+	Tag <form> hanya sebagai tag pembungkus attribute form:action dan method sedangkan tag isinya berupa
+	
+	INPUT <input
+
+	attribte yang seirng di gunakan :type placeholder dan value
+	
+	<input type="text">
+  	<input type="text"placeholder="username">
+	<inout type="text" placeholder="username" value="21001">
+
+	attribute yang sering di gunakan :type,name dan value
+	value dari type radio dan checkbox
+	radio adalah pilihan yg hanya boleh memilih 1 bagian sedangkan checkbox adalah pilihan yang boleh memilih lebih dari 1 pilihan
+	syarat radio adalah semua value dari name harus sama
+
+	button
+	
+	tombol sebagai triger/pemicu bahwa form dikirim
+        attribute wajib adalah type valuenya ada submit atau button
+   	contoh:
+      	<form>
+		<inoyt type="text" placeholder="username:>
+		<input type="password" placeholder=password"
+		<button type=submit>login</button>
+	</form>
+	
+																		color
+																		
+		ada 5 cara penulisan 
+		
+		color name red blue green yellow grey black white tomato orange dodgerblue etc
+		RBG(red,blue,green)
+		RGBA(red green blue alpha)
+		HEX(hexagon
+		HSL(hue,saturaion,lightness
+																	placement/placing
+		inline embed dan external
+		inline
+		ditempatkan di dalam tag pembuka sebagau attribute
+		menggunakan attribute style
+		contoh
+		<h1> style="color:red">ponpes walisongo</h1>
+    
+																	embed
+		disisipkan pada tag <head>
+		dibungkus dalam tag <style>
+		cara oenulisan
+		
+		<style>
+		selector{
+					property:value
+					property:value
+		}
+		</style>
+
+		selector adalah target tag class id tag di tuju property sama dengan key pada css inline
+			value adalah nilai yang di tentukan
+
+									Pengertian
+
+ 		cascading		styles sheet(css) merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih berstruktur dan seragam
+		css bukan bahasa pemigraman csss terdiri dari struktur/bagian/penanda untuk mengatur bagian bagian yg akan di tampilkan di browser
+		css dapat mengendalikan
+		ukuran gambar 
+		warna jenis dan ukuran teks
+		warma tabel
+		ukuran border jenus dan warna border
+		warna hyperlink warna mouse o ver spasi antar paragraf spasi antar teks margin kiri kanan atas bawah dan parameter lainnya
+		
+		
+									placement/placing
+		embed 
+		jika selector berupa tag maka cukup di tulis nama tag
+		h1{
+			color:italic;
+		{
+
+
+		jika slector brtupa id maka ditulis tagar (#) lalu nama id yag di target 
+		#judul{
+			color:blue
+			font-style:italic;
+		{
+		
+		jika slector beripa class maka di tulis titik(.) lalu nama class yang di target
+		.judul{
+			color:blue;
+			font-style;italic;
+			{  
+		
+										
+		external	
+  		
+		css ditulis di file yang terpisah lalu di panggil do tag <head> dengan syntax
+															
+		file bisa dari internal maupun external
+															
+	<link rel="stylesheet" href="namafile.css">
+	<link rel="stylesheet" href="...........................css>
+	setiao nama folder dan nama file tidak bileh menggunakan spasi
+	cara openulisan sama dengan cara penulisan embed
+	cara pemnulisan external adalah cara terbaik dan direkomendasikan untuk penulisan css
+								WARNA PADA CSS	
+primary = biru
+secondary = abu2
+succes = hijau
+danger = merah
+warning = jingga
+info = biru tosca
+dark = hitam
+muted = abu abu terang
+							

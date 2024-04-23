@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function shio(tanggal,bulan,tahun){
+        let shio='';
+        if(tanggal>1 && bulan=='februari' && tahun==1984){
+          shio='tikus';
+        }
+        if(tanggal<18 && bulan=='februari' && tahun==1985){
+          shio='tikus';
+        }
+        if(tanggal>19 && bulan=='februari' && tahun==1985){
+          shio='kerbau';
+        }
+        if(tanggal<7 && bulan=='februari' && tahun==1986){
+          shio='kerbau';
+        }
+        return shio;
+      }
+let konfirmasi=confirm('Ingin mengetahui shiomu??');
+      while(konfirmasi==true){
+        let tahun=parseInt(prompt('Masukkan tahun lahirmu!'));
+        let tanggal=parseInt(prompt('Masukkan tanggal lahirmu!!'));
+        let bulan=prompt('Masukkan bulan lahirmu!!');
+            bulan.toLowerCase();
+            
+        let shiomu=shio(tanggal,bulan,tahun);
+
+        alert('Shiomu adalah ' + shiomu );
+        konfirmasi=confirm('Ingin lakukan lagi?');
+      }
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Jquery</title>
+         <link href="fontawesome/css/all.css" rel="stylesheet">
+         <link href="boot/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+            <h1>test</h1>
+            <a href="www.facebook.com">facebook</a>
+            <div class="body"></div>
+
+            <i class="fa-solid fa-trash"></i>
+            <br>
+            <input type="text">
+
+            <br>
+            <br>
+            
+
+            <button type="button" class="btn btn-sm btn-primary ganti">ganti warna</button>
+            <br>
+            <br>
+            <button type="button" class="btn btn-sm btn-danger hapus">hapus warna</button>
+            <br>
+            <br>
+            <button type="button" class="tekan">tekan</button>
+            <br>
+            <br>
+            <input type="text">
+            <br>
+            <br>
+
+            <div class="input-group mb-3">
+            <input class="form-control pass" type="password" placeholder="Password">
+            <button class="btn btn-outline-secondary buka" type="button"><i class="fa-solid fa-eye-slash a"></i></button>
+            </div>
+    
+             <script src="jquery.js"></script>
+             <script src="boot/js/bootstrap.bundle.min.js"></script>
+             <script>
+                $(document).ready(function () {
+
+                    // $('.dua').on('click', function () {
+                        // $('a').removeAttr('href');
+                    // })
+
+                    // $('.ganti').on('click', function () {
+                        // $('h1').attr('class','text-danger');
+
+                    // });
+
+                    // $('.hapus').on('click', function () {
+                        // $('h1').removeAttr('class');
+                    // })
+                    
+                    // $('.tekan').on('click' , function () {
+                        // let x=$('a').attr('href');
+                        // console.log(x)
+                    // })
+                    
+                    // $('.ganti').on('click', function (){
+                    //    $('a').attr('href','www.youtube.com');
+                    // })
+
+                    // $('.ganti').on('click', function  (){
+                        // let url=$('h1').text();
+                        // console.log(url)
+                        // $('a').text(url);
+
+                    // })
+
+                    $('.ganti').on('click' , function (){
+                        // let url=$('a').text()
+                        // $('.ganti').text(url)
+
+                    // let u=$('.ganti').text();
+                    // let o=$('.hapus').text();
+                        //    $('.hapus').text(u);               
+                        //   $('.ganti').text(o);
+
+                        // $('.body').html('<button class="btn btn-primary">Youtube</button>')
+                        // $('h1').show();
+                        
+                        // $('h1').toggle()
+
+                        // if(8<5){
+                        //    $('h1').text('benar')
+                        //  } else{
+                            // $('h1').text('salah')
+                        // }
+
+                        let x=21
+                        let y=21
+                    
+
+                        if(y>x){
+                            $('h1').text('fiz')
+
+                        }else if(x>y){
+                            $('h1').text('buzz')
+
+                        }else
+                            $('h1').text('walisongo')
+
+                        
+
+                        
+
+                            
+                    });
+
+                    // $('input').on('keyup',function (){
+                        // let text=$(this).val()
+                        // console.log(text)
+                    // });
+                    // $('.buka').on('click' , function () {
+                        // $('.pass').attr('type','text');
+                        // $('.a').attr('class' , 'fa-solid fa-eye')
+                        // $(this).attr('class', 'btn btn-outline-secondary tutup' )
+                    //    
+                    //    
+                        // $('.pass').attr('type','password')
+
+                    // });
+                    // $('.tutup').on('click' , function () {
+                        // $('.pass').attr('type' , 'password')
+                        // $('.a').attr('class' , 'fa-solid fa-eye-slash')
+                        // $(this).attr('class' , 'btn btn-outline-secondary buka')
+                    // });
+
+                    
+                    
+
+                    
+                    
+
+                    
+                    
+                    
+                });
+             </script>
+    </body>
+</html>

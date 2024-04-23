@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //menemukan zodiac dan umur
+        //1.data yang harus di dapat tanggal,bulan,tahun lahir
+        //2.data zodiac 
+        //3.membuat function mencari zodiac = zodiac dengan return zodiac 
+        //4.membuat function mencari umur = umur dengan return umur
+        //membuat confirm dengan variable konfirmasi
+        //5.membuat looping yang berisi :
+        //a. mengambil tanggal lahir  dari user berupa prompt deengan variabel tanggal_lahir
+        //b.mengambil bulan dari user berupa prompt dengan variabel bulan
+        //c.mengambil tahun lahir dari user berupa prompt dengan variabel tahun_lahir
+        //6.menjadikann tanggal lahir dan tahun menjadi interger
+        //7.menjadikan bulan lowercase
+        //8.memanggil fungsi zodiac dengan mengirim parameter tanggal_lahir,bulan dan di masukan dalam variabel bintang
+        //9.memanggil fungsi umur dengan mengirim parameter tahun_lahir dan di masukan dalam variabel umur
+        //10.menampilkan hasil zodiac dan umur menggunakan alert dengan cara memasukkan variabel bintang dan umur
+        //11.membuat confirm coba lagi untuk menggantikan nilai variable konfirmasi 
+
+        function zodiac(tanggal,bulan){
+           let zodiac="";
+        if(tanggal>20 && bulan=='maret'){
+            zodiac='Aries';
+        }
+        if(tanggal<20 && bulan=='april'){
+            zodiac='Aries';
+        } 
+        if(tanggal>20 && bulan=='april'){
+            zodiac='Taurus';
+        }
+        if(tanggal<19 && bulan=='mei'){
+            zodiac='Taurus';
+        }
+        if(tanggal>20 && bulan=='mei'){
+            zodiac='Gemini';
+        }
+        if(tanggal<20 && bulan=='mei'){
+            zodiac='Gemini';
+        }
+        if(tanggal>22 && bulan=='juni'){
+            zodiac='Cancer';
+        }
+        if(tanggal<21 && bulan=='juli'){
+            zodiac='Cancer';
+        }
+        if(tanggal>22 && bulan=='juli'){
+            zodiac='Leo';
+        }
+        if(tanggal<21 && bulan=='agustus'){
+            zodiac='Leo';
+        }
+        if(tanggal>22 && bulan=='agustus'){
+            zodiac='Virgo';
+        }
+        if(tanggal<21 && bulan=='september'){
+            zodiac='Virgo';
+        }
+        return zodiac;
+       }
+       function umur(tahun_lahir){
+        
+        return (2024 - parseInt(tahun_lahir));
+
+       }
+       let konfirmasi=confirm('Ingin mengetahui zodiac dan umurmu?');
+       while(konfirmasi==true){
+        let tanggal_lahir=parseInt(prompt('Masukkan tanggal lahirmu!.'));
+        let bulan= prompt('Masukkan bulan lahirmu!.');
+            bulan.toLowerCase();
+        let tahun_lahir=parseInt(prompt('Masukkan tahun lahirmu!.'));
+
+        let bintang=zodiac(tanggal_lahir,bulan);
+        let usia=umur(tahun_lahir);
+
+        alert('Zodiacmu adalah ' + bintang + ' dan umurmu adalah ' + usia + ' tahun.');
+        
+        konfirmasi=confirm('Ingin lakukan lagi?');
+    }
+      alert('Selesai');
+    </script>
+</body>
+</html>

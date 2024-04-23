@@ -1,0 +1,45 @@
+attr penting :
+-data=data
+-value=.val
+data
+text
+html
+hide
+show
+toogle
+ganjil:1
+genap:0
+
+karakter #$%^
+
+
+type data
+string(kata , karakter, dan angka)
+double(bilangan desimal)
+interger(bulangan bulat)
+char(kata)
+boolean (hanya teridir dari 2 yaitu true dan false) type data yang mempunyai 2 nilai
+
+
+operator penugasan
+=
++=
+-=
+/=
+*=
+
+operator perbandingan ada 8 yaitu:
+==
+===
+!=
+!=
+<
+<=lebih kecil
+>
+>=lebih besar
+
+operator logika 
+
+AND &&
+
+OR ||

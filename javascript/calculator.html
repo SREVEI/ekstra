@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+  <link href="boot/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <h3 class="mt-5 text-center">Calculator</h3>
+  <div class="d-flex justify-content-center mt-3">
+    <div class="card" style="width: 500px;">
+
+      <div class="card-body">
+        <input type="text" class="form-control tampilan" readonly>
+
+        <div class="d-flex justify-content-center gap-5 mt-3">
+
+          <button class="btn btn-secondary C">
+            C
+          </button>
+          <button class="btn btn-secondary ()">
+            ()
+          </button>
+          <button class="btn btn-secondary %">
+            %
+          </button>
+          <button class="btn btn-secondary /">
+            /
+          </button>
+        </div>
+
+        <div class="d-flex justify-content-center gap-5 mt-3">
+          <button class="btn btn-secondary angka" data-value="7">
+            7
+          </button>
+          <button class="btn btn-secondary angka" data-value="8">
+            8
+          </button>
+          <button class="btn btn-secondary angka" data-value="9">
+            9
+          </button>
+          <button class="btn btn-secondary opr" data-value="X">
+            X
+          </button>
+        </div>
+
+        <div class="d-flex justify-content-center gap-5 mt-3">
+          <button class="btn btn-secondary angka" data-value="4">
+            4
+          </button>
+          <button class="btn btn-secondary angka" data-value="5">
+            5
+          </button>
+          <button class="btn btn-secondary angka" data-value="6">
+            6
+          </button>
+          <button class="btn btn-secondary opr" data-value="+">
+            +
+          </button>
+        </div>
+
+        <div class="d-flex justify-content-center gap-5 mt-3">
+          <button class="btn btn-secondary angka" data-value="1">
+            1
+          </button>
+          <button class="btn btn-secondary angka" data-value="2">
+            2
+          </button>
+          <button class="btn btn-secondary angka" data-value="3">
+            3
+          </button>
+          <button class="btn btn-secondary opr" data-value="-">
+            -
+          </button>
+        </div>
+
+        <div class="d-flex justify-content-center gap-5 mt-3">
+          <button class="btn btn-secondary">
+            +/-
+          </button>
+          <button class="btn btn-secondary angka" data-value="0">
+            0
+          </button>
+          <button class="btn btn-secondary">
+            ,
+          </button>
+          <button class="btn btn-success">
+            =
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="jquery.js"></script>
+  <script src="boot/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      
+      $(".angka").on('click', function () {
+
+        let angka = $(this).data("value");
+        $(".tampilan").val(angka);
+        let tampilan = $(".tampilan").val()
+
+      });
+      $(".opr").on('click', function () {
+
+        let opr = $(this).data("value");
+        let angka = $(".tampilan").val();
+        $(".tampilan").val(angka + " " + opr);
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Jquery</title>
+         <link href="fontawesome/css/all.css" rel="stylesheet">
+         <link href="boot/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+       <h6 class="text-center mt-3 angka">10</h6>
+
+        <div class="container mt-3">
+              <div class="input-group">
+            <input class="form-control pass" type="text" placeholder="Masukan angka!">
+            <button class="btn btn-outline-primary buka" type="button">
+               OK
+            </button>
+                 </div>
+            
+            <h6 class="nomor text-center besar">Angka belum ditentukan!</h6>
+            
+        </div>
+    
+             <script src="jquery.js"></script>
+             <script src="boot/js/bootstrap.bundle.min.js"></script>
+             <script>
+                $(document).ready(function () {
+
+                    // $('.dua').on('click', function () {
+                        // $('a').removeAttr('href');
+                    // })
+
+                    // $('.ganti').on('click', function () {
+                        // $('h1').attr('class','text-danger');
+
+                    // });
+
+                    // $('.hapus').on('click', function () {
+                        // $('h1').removeAttr('class');
+                    // })
+                    
+                    // $('.tekan').on('click' , function () {
+                        // let x=$('a').attr('href');
+                        // console.log(x)
+                    // })
+                    
+                    // $('.ganti').on('click', function (){
+                    //    $('a').attr('href','www.youtube.com');
+                    // })
+
+                    // $('.ganti').on('click', function  (){
+                        // let url=$('h1').text();
+                        // console.log(url)
+                        // $('a').text(url);
+
+                    // })
+
+                    $(".buka").on('click' , function (){
+                        // let url=$('a').text()
+                        // $('.ganti').text(url)
+
+                    // let u=$('.ganti').text();
+                    // let o=$('.hapus').text();
+                        //    $('.hapus').text(u);               
+                        //   $('.ganti').text(o);
+
+                        // $('.body').html('<button class="btn btn-primary">Youtube</button>')
+                        // $('h1').show();
+                        
+                        // $('h1').toggle()
+
+                        // if(8<5){ 
+                        //    $('h1').text('benar')
+                        //  } else{
+                            // $('h1').text('salah')
+                        // }
+
+                        
+                        ''
+                        let num1=parseInt($('.pass').val());    
+                        let num2=parseInt($('.angka').text());
+                        
+
+                        if(num1 == num2){    
+                             $('.besar').text('Angka sama besar')
+                        }else if(num1 > num2){
+                            
+                            $('.besar').text('Angka yang di masukan lebih besar dari pada 10')
+                            
+                        }else if(num1 < num2){
+                            
+                            $('.besar').text('Angka yang dimasukan lebih kecil dari pada 10')
+                        }
+
+                    });
+
+                    // $('input').on('keyup',function (){
+                        // let text=$(this).val()
+                        // console.log(text)
+                    // });
+                    // $('.buka').on('click' , function () {
+                        // $('.pass').attr('type','text');
+                        // $('.a').attr('class' , 'fa-solid fa-eye')
+                        // $(this).attr('class', 'btn btn-outline-secondary tutup' )
+                    //    
+                    //    
+                        // $('.pass').attr('type','password')
+
+                    // });
+                    // $('.tutup').on('click' , function () {
+                        // $('.pass').attr('type' , 'password')
+                        // $('.a').attr('class' , 'fa-solid fa-eye-slash')
+                        // $(this).attr('class' , 'btn btn-outline-secondary buka')
+                    // })    
+                    
+                });
+             </script>
+    </body>
+</html>
