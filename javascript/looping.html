@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="box"></div>
+<script>
+    let html='';
+    for (let i = 0; i < 100; i++) {
+        let color=Math.floor(Math.random()* 999 )+ 100;
+        if((i+1)%10==0){
+            
+          html+=  `<div style="width: 50px;height: 50px;border: 3px solid black;border-radius: 50%;background-color:red;"></div>`
+
+        }else{
+            html += `<div style="width: 50px;height: 50px;border: 3px solid black;border-radius:50%;background-color: #${color};"></div>`
+        }
+        
+    }
+    let box=document.querySelector('.box');
+    box.innerHTML=html;
+</script>
+</body>
+</html>
