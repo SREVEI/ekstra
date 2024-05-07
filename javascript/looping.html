@@ -9,14 +9,17 @@
   <div class="box"></div>
 <script>
     let html='';
+    
     for (let i = 0; i < 100; i++) {
         let color=Math.floor(Math.random()* 999 )+ 100;
         if((i+1)%10==0){
             
-          html+=  `<div style="width: 50px;height: 50px;border: 3px solid black;border-radius: 50%;background-color:red;"></div>`
+          html+=  `<div style="width: 50px;height: 50px;border: 3px solid black;border-radius: 50%;background-color:red;font-size:24px;">${(i+1)}</div>`
 
+        }else if((i+1)%5==0){
+            html += `<div style="width: 50px;height: 50px;border: 3px solid black;border-radius:50%;background-color:blue;font-size:24px;">${(i+1)}</div>`
         }else{
-            html += `<div style="width: 50px;height: 50px;border: 3px solid black;border-radius:50%;background-color: #${color};"></div>`
+          html += `<div style="width: 50px;height: 50px;border: 3px solid black;border-radius:50%;background-color:#${color};font-size:24px;">${(i+1)}</div>`
         }
         
     }
